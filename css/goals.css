@@ -1,0 +1,63 @@
+.title-goals-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  padding: 50px 100px 0px;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: 600;
+  margin-left: 200px;
+  margin-left: 0;
+  margin-top: 22px;
+}
+
+.line-fot-goals {
+  height: 1.5px;
+  background: rgba(56, 48, 48, 0.1);
+  margin-top: 10px;
+  width: 89%;
+  margin: 20px auto;
+}
+
+.addGoals {
+  border-radius: 8px;
+  padding: 8px 10px;
+  width: 135px;
+  height: 56px;
+  box-shadow: 0 12px 16px -4px rgba(16, 24, 40, 0.1);
+  background: rgb(9, 239, 5);
+  border-color: green;
+}
+
+.addGoals:hover {
+  position: relative;
+  top: -4px; /* Зсув на 2 пікселя вгору */
+  cursor: pointer;
+}
+
+button.addGoals {
+  font-size: 18px;
+  color: white;
+}
+
+.goals-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 100px;
+  max-width: 1300px;
+  padding-bottom: 300px;
+}
+
+.text-decoration {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.active-goals-status {
+  background-color: rgba(0, 255, 255, 0.5);
+  border: 2px solid #ccc;
+  padding: 20px;
+  border-radius: 10px;
+}

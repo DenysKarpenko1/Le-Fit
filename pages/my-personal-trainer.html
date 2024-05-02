@@ -4,44 +4,114 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Personal Trainer</title>
+    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="../css/my-personal-trainer.css" />
   </head>
   <body>
-    <header>
-      <h1>
-        <a href="#"><img src="images/logo.jpg" alt="Логотип" /></a>
-      </h1>
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Goals</a></li>
-          <li><a href="#">Exercise and Plans</a></li>
-          <li><a href="#">My Personal Trainer</a></li>
-        </ul>
-      </nav>
+    <header class="header">
+      <div class="header__container container">
+        <a href="#"><img src="images/logo.jpg" alt="Логотип" class="logo" /></a>
+
+        <div class="menu">
+          <ul class="menu__list">
+            <li><a class="menu__link" href="#">Home</a></li>
+            <li><a class="menu__link" href="#">Goals</a></li>
+            <li><a class="menu__link" href="#">Exercise and Plans</a></li>
+            <li><a class="menu__link" href="#">My Personal Trainer</a></li>
+          </ul>
+        </div>
+
+        <div class="socialsMenu">
+          <ul class="socialsMenu__list">
+            <li>
+              <a href="#"
+                ><img
+                  src="images/instagram.png"
+                  alt="instagram"
+                  class="socialsPhoto"
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  src="images/you-tube.png"
+                  alt="you-tube"
+                  class="socialsPhoto"
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  src="images/telegram.png"
+                  alt="telegram"
+                  class="socialsPhoto"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </header>
 
     <main>
-      <h1>Our trainers</h1>
+      <div class="container-of-information">
+        <h1 class="title">Our trainers</h1>
 
-      <section>
-        <div>
-          <img src="#" alt="Trainer Image" />
-          <p>Trainer Description</p>
-          <button>Choose this trainer</button>
-        </div>
+        <section>
+          <div>
+            <img src="#" alt="Trainer Image" />
+            <p>Trainer Description</p>
+            <button>Choose this trainer</button>
+          </div>
 
-        <button>How does it work?</button>
-        <button>Pricing</button>
-      </section>
+          <button>How does it work?</button>
+          <button>Pricing</button>
+        </section>
+      </div>
     </main>
 
-    <footer>
-      <div>
-        <h2>Contact</h2>
-        <p>Phone Number</p>
-        <p>Email</p>
-        <p>Address</p>
-        <p>Social Media</p>
+    <footer class="footer">
+      <div class="footer__container">
+        <div>
+          <h2 class="contact">Contacts:</h2>
+          <ul class="contact__menu">
+            <li>karpenkodenyss@gmail.com</li>
+            <li>karpenkodenyss@gmail.com</li>
+            <li>karpenkodenyss@gmail.com</li>
+          </ul>
+          <div class="line"></div>
+        </div>
+        <div>
+          <p class="socialsMedias">Social Medias:</p>
+          <div>
+            <ul class="socialsMenu__list__footer">
+              <li>
+                <a href="#"
+                  ><img
+                    src="images/instagram.png"
+                    alt="instagram"
+                    class="socialsPhoto"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img
+                    src="images/you-tube.png"
+                    alt="you-tube"
+                    class="socialsPhoto"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img
+                    src="images/telegram.png"
+                    alt="telegram"
+                    class="socialsPhoto"
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <a href="#"><img src="images/logo.jpg" alt="Логотип" class="logo" /></a>
       </div>
     </footer>
   </body>

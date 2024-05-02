@@ -1,0 +1,238 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1.5;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: "Montserrat";
+}
+
+.header {
+  background-color: rgba(235, 225, 216, 255);
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 0 10px #0003;
+  z-index: 2;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+}
+
+.menu {
+  font-weight: 600;
+  font-size: 20px;
+  margin-left: 200px;
+}
+
+.menu__list {
+  display: flex;
+  margin-top: 22px;
+  margin-left: 200px;
+  margin-left: 0;
+  list-style-type: none;
+}
+
+.menu__link {
+  text-decoration: none;
+  margin-left: 45px;
+  color: black;
+}
+
+.menu__link:hover {
+  text-decoration: underline;
+}
+
+.socialsPhoto {
+  width: 50px;
+  height: 50px;
+  transition: transform 0.3s ease;
+}
+
+.socialsPhoto:hover {
+  transform: translateY(-5px);
+}
+
+.socialsMenu {
+  margin-left: 200px;
+}
+
+.socialsMenu__list {
+  display: flex;
+  margin-top: 22px;
+  list-style-type: none;
+  gap: 25px;
+}
+
+.footer {
+  background-color: #1e3231;
+  color: #dbdbdb;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.footer__container {
+  text-align: center;
+}
+
+.contact,
+.socialsMedias {
+  font-size: 30px;
+}
+
+.line {
+  height: 1.5px;
+  background: rgba(255, 255, 255, 0.1);
+  margin-top: 10px;
+  width: calc(100% - 5em);
+  margin: 20px auto;
+}
+
+.socialsMenu__list__footer {
+  display: flex;
+  justify-content: center;
+  margin: 22px 0;
+  list-style-type: none;
+  gap: 25px;
+}
