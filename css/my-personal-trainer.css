@@ -5,7 +5,78 @@
 .title {
   font-size: 30px;
   font-weight: 600;
-  margin-left: 200px;
-  margin-left: 0;
   margin-top: 22px;
+}
+
+.trainer-info {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+.trainer-photo {
+  width: 300px;
+  height: 300px;
+}
+
+.trainer-biography {
+  margin-left: 20px;
+  flex: 1;
+}
+
+.trainer-biography > p {
+  font-size: 20px;
+}
+
+.choose-trainer {
+  border-radius: 8px;
+  padding: 8px 10px;
+  width: 135px;
+  height: 56px;
+  box-shadow: 0 12px 16px -4px rgba(16, 24, 40, 0.1);
+  background: rgb(9, 239, 5);
+  border-color: green;
+}
+
+.choose-trainer:hover {
+  position: relative;
+  top: -4px;
+  cursor: pointer;
+}
+
+button.choose-trainer {
+  font-size: 18px;
+  color: white;
+}
+
+.trainers-container {
+  margin-top: 50px;
+}
+
+.button_button-container {
+  border-radius: 8px;
+  padding: 8px 10px;
+  width: 400px;
+  height: 70px;
+  box-shadow: 0 12px 16px -4px rgba(16, 24, 40, 0.1);
+  border-color: black;
+  margin-right: 300px;
+}
+
+.button_button-container:hover {
+  position: relative;
+  top: -4px;
+  cursor: pointer;
+}
+
+button.button_button-container {
+  font-size: 25px;
+}
+
+.button-container {
+  padding: 50px 0;
+  margin-left: 300px;
+  text-wrap: nowrap;
 }
