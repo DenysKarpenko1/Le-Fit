@@ -5,26 +5,47 @@
 }
 
 .mainImage img {
-    border-radius: 20px; /* Adjust the value to change the roundness */
+    border-radius: 20px;
 }
 
 .menu__link{
-    font-family: sans-serif ; /* Use the custom font for specific elements */
+    font-family: sans-serif ;
 }
 
 
 
-.btnNewWorkout {
-    font-family: sans-serif ; /* Use the custom font for specific elements */
-    background-color: #6c8057; /* Fallback for older browsers */
-    color: black; /* Text color */
-    padding: 10px 20px; /* Padding around the text */
-    border: none; /* No border */
-    border-radius: 5px; /* Rounded corners */
-    text-decoration: none; /* Remove default underline for links */
+.butn {
+    background-color: transparent;
+    background-image: linear-gradient(to bottom, #fff5ee, #f8eedb);
+    border: 0 solid #e5e7eb;
+    border-radius: .5rem;
+    box-sizing: border-box;
+    color: #482307;
+    column-gap: 1rem;
+    cursor: pointer;
+    display: flex;
+    font-family: ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 100%;
+    font-weight: 700;
+    line-height: 24px;
+    margin: 0;
+    outline: 2px solid transparent;
+    padding: 1rem 1.5rem;
+    text-align: center;
+    text-transform: none;
+    transition: all .1s cubic-bezier(.4, 0, .2, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    box-shadow: -6px 8px 10px rgba(81,41,10,0.1),0px 2px 2px rgba(81,41,10,0.2);
 }
 
-.btnNewWorkout:hover {
-    background-color: rgba(235, 225, 216, 0.8); /* Change color on hover */
+.butn:active {
+    background-color: #f3f4f6;
+    box-shadow: -1px 2px 5px rgba(81,41,10,0.15),0px 1px 1px rgba(81,41,10,0.15);
+    transform: translateY(0.125rem);
 }
 
+.butn:focus {
+    box-shadow: rgba(72, 35, 7, .46) 0 0 0 4px, -6px 8px 10px rgba(81,41,10,0.1), 0px 2px 2px rgba(81,41,10,0.2);
+}
