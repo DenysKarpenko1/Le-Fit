@@ -1,1 +1,30 @@
 
+.mainImage{
+    display: flex;
+    justify-content: center;
+}
+
+.mainImage img {
+    border-radius: 20px; /* Adjust the value to change the roundness */
+}
+
+.menu__link{
+    font-family: sans-serif ; /* Use the custom font for specific elements */
+}
+
+
+
+.btnNewWorkout {
+    font-family: sans-serif ; /* Use the custom font for specific elements */
+    background-color: #6c8057; /* Fallback for older browsers */
+    color: black; /* Text color */
+    padding: 10px 20px; /* Padding around the text */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove default underline for links */
+}
+
+.btnNewWorkout:hover {
+    background-color: rgba(235, 225, 216, 0.8); /* Change color on hover */
+}
+
