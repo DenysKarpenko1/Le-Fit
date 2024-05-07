@@ -49,3 +49,59 @@
 .butn:focus {
     box-shadow: rgba(72, 35, 7, .46) 0 0 0 4px, -6px 8px 10px rgba(81,41,10,0.1), 0px 2px 2px rgba(81,41,10,0.2);
 }
+
+.butn1{
+    width: 100%;
+}
+
+.workouts {
+    border: 2px solid #1e3231;
+    padding: 20px;
+    border-radius: 16px;
+}
+
+.mirrored-image{
+    transform: scaleX(-1);
+}
+
+.photo-block {
+    max-width: 350px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+.photo-block img {
+    object-fit: cover;
+    width: 170px;
+    height: 220px;
+    border-radius: 16px;
+}
+
+.small-button{
+    width: 40px;
+}
+
+.full-content {
+    justify-content: center;
+    display: flex; /* Use flexbox to layout the container */
+}
+
+
+.workouts, .calendar {
+    margin-right: 20px; /* Optional: Add some spacing between the divs */
+}
+@media (max-width: 1400px) { /* Adjust the maximum width based on your desired zoom level */
+    .full-content {
+        align-items: center; /* Center the flex items vertically */
+        flex-direction: column;
+    }
+
+    .workouts, .calendar {
+        margin-right: 0;
+    }
+
+    .workouts {
+
+        margin-bottom: 20px;
+    }
+}
+
