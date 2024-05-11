@@ -1,69 +1,149 @@
-
-.mainImage{
-    display: flex;
-    justify-content: center;
+.mainImage {
+  display: flex;
+  justify-content: center;
 }
 
 .mainImage img {
-    border-radius: 20px;
+  border-radius: 20px;
 }
 
-.menu__link{
-    font-family: sans-serif ;
+.dsadasd {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.butn1{
-    width: 100%;
+/* .workout-calendar-container {
+  display: flex;
+}
+
+.menu__link {
+  font-family: sans-serif;
+} */
+
+.butn1 {
+  width: 100%;
 }
 
 .workouts {
-    border: 2px solid #1e3231;
-    padding: 20px;
-    border-radius: 16px;
+  border: 2px solid #1e3231;
+  padding: 20px;
+  border-radius: 16px;
 }
 
-.mirrored-image{
-    transform: scaleX(-1);
+.mirrored-image {
+  transform: scaleX(-1);
 }
 
 .photo-block {
-    max-width: 350px;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
+  max-width: 350px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
 }
 .photo-block img {
-    object-fit: cover;
-    width: 170px;
-    height: 220px;
-    border-radius: 16px;
+  object-fit: cover;
+  width: 170px;
+  height: 220px;
+  border-radius: 16px;
 }
 
-.small-button{
-    width: 40px;
+.custom-form {
+  display: inline-block;
 }
 
-.full-content {
-    justify-content: center;
-    display: flex; /* Use flexbox to layout the container */
+.custom-select {
+  padding: 8px 28px 8px 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  appearance: none;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8"><path fill="%23333" d="M6 8L0 0h12z"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 8px center;
+  background-size: 8px;
+  cursor: pointer;
 }
 
-
-.workouts, .calendar {
-    margin-right: 20px; /* Optional: Add some spacing between the divs */
-}
-@media (max-width: 1400px) { /* Adjust the maximum width based on your desired zoom level */
-    .full-content {
-        align-items: center; /* Center the flex items vertically */
-        flex-direction: column;
-    }
-
-    .workouts, .calendar {
-        margin-right: 0;
-    }
-
-    .workouts {
-
-        margin-bottom: 20px;
-    }
+.custom-select:hover {
+  border-color: #aaa;
 }
 
+.custom-select:focus {
+  border-color: #555;
+}
+
+.arrows-button {
+  width: 40px;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.arrows-image {
+  width: 40px;
+}
+
+/* Стилізація радіокнопок !!!!! */
+.custom-radio-form {
+  display: flex;
+  border: 1px solid #ccc; /* Додаємо рамку */
+  border-radius: 4px; /* Закруглюємо кути */
+}
+
+.custom-radio-label {
+  position: relative;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.custom-radio-label input[type="radio"] {
+  opacity: 0; /* Приховуємо саму радіокнопку */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+/* Стилізація радіокнопок - вибрана */
+.custom-radio-label input[type="radio"]:checked + img {
+  background-color: #ccc; /* Змінюємо колір фону при виборі */
+}
+
+/* Стилізація радіокнопки - зображення */
+.radio-icon {
+  display: block;
+  width: 40px; /* Задаємо розмір зображення */
+  height: 40px; /* Задаємо розмір зображення */
+}
+
+/* Стилізація лінії, що розділяє картинки */
+.custom-radio-label::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1px;
+  height: 80%;
+  background-color: #ccc;
+}
+
+/* @media (max-width: 1400px) {
+  
+  .full-content {
+    align-items: center; 
+    flex-direction: column;
+  }
+
+  .workouts,
+  .calendar {
+    margin-right: 0;
+  }
+
+  .workouts {
+    margin-bottom: 20px;
+  }
+} */

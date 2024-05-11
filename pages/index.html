@@ -53,83 +53,114 @@
     </header>
 
     <main>
-      <br>
+      <br />
       <div class="mainImage">
-        <img src="images/main-head.png" alt="Training">
+        <img src="images/main-head.png" alt="Training" />
       </div>
-      <br>
+      <br />
+
       <section>
-        <div class="full-content">
-        <div class="workouts">
+        <div class="container">
+          <div class="workout-calendar-container">
+            <div class="dsadasd">
+              <button class="butn" role="button">+ New workout</button>
 
-        <button class="butn" role="button">+ New workout</button>
-          <br>
-        <div>
-          <div class="photo-block">
-            <a href=""><img src="images/biceps.jpg" alt="Photo 1"></a>
-            <a href=""><img src="images/chest.jpg" alt="Photo 2"></a>
-            <a href=""><img src="images/back.jpg" alt="Photo 3"></a>
-            <a href=""><img src="images/legs.jpg" alt="Photo 4"></a>
+              <form class="custom-form">
+                <select class="custom-select">
+                  <option value="today">Today</option>
+                  <option value="tomorrow">Tomorrow</option>
+                  <option value="yesterday">Yesterday</option>
+                </select>
+              </form>
+
+              <div>
+                <button class="arrows-button">
+                  <img
+                    src="images/right-arrow.jpg"
+                    alt="Стрілка вліво"
+                    class="mirrored-image arrows-image"
+                  />
+                </button>
+                <button class="arrows-button">
+                  <img
+                    src="images/right-arrow.jpg"
+                    alt="Стрілка вправо"
+                    class="arrows-image"
+                  />
+                </button>
+              </div>
+
+              <p>Березень 2024</p>
+
+              <form class="custom-form">
+                <select class="custom-select">
+                  <option value="week">Week</option>
+                  <option value="month">Month</option>
+                  <option value="year">Year</option>
+                </select>
+              </form>
+
+              <form class="custom-radio-form">
+                <label class="custom-radio-label" for="calendar">
+                  <input
+                    type="radio"
+                    name="date"
+                    id="calendar"
+                    value="calendar"
+                    checked
+                  />
+                  <img
+                    src="images/calendar.png"
+                    alt="Calendar"
+                    class="radio-icon"
+                  />
+                </label>
+                <label class="custom-radio-label" for="other">
+                  <input type="radio" id="other" name="date" value="other" />
+                  <img src="images/other.png" alt="Dots" class="radio-icon" />
+                </label>
+              </form>
+
+              <!-- <div class="workouts">
+              <div>
+                <div class="photo-block">
+                  <a href=""><img src="images/biceps.jpg" alt="Photo 1" /></a>
+                  <a href=""><img src="images/chest.jpg" alt="Photo 2" /></a>
+                  <a href=""><img src="images/back.jpg" alt="Photo 3" /></a>
+                  <a href=""><img src="images/legs.jpg" alt="Photo 4" /></a>
+                </div>
+                <button class="butn butn1" role="button">More</button>
+              </div>
+            </div>
+
+            <div>
+              <table>
+                <thead>
+                  <tr>
+                    <th>25</th>
+                    <th>26</th>
+                    <th>27</th>
+                    <th>28</th>
+                    <th>29</th>
+                    <th>30</th>
+                    <th>31</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><input type="text" placeholder="Plans..." /></td>
+                    <td><input type="text" placeholder="Plans..." /></td>
+                    <td><input type="text" placeholder="Plans..." /></td>
+                    <td><input type="text" placeholder="Plans..." /></td>
+                    <td><input type="text" placeholder="Plans..." /></td>
+                    <td><input type="text" placeholder="Plans..." /></td>
+                    <td><input type="text" placeholder="Plans..." /></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div> -->
+            </div>
           </div>
-          <button class="butn butn1" role="button">More</button>
-        </div>
-        </div>
-
-
-        <div class="calendar">
-          <form>
-            <select>
-              <option value="today">Today</option>
-              <option value="tomorrow">Tomorrow</option>
-              <option value="yesterday">Yesterday</option>
-            </select>
-          </form>
-
-          <button><img src="images/right-arr.png" alt="Стрілка вліво" class="mirrored-image small-button"/></button>
-          <button><img src="images/right-arr.png" alt="Стрілка вправо" class="small-button"/></button>
-
-          <form>
-            <select>
-              <option value="week">Week</option>
-              <option value="month">Month</option>
-              <option value="year">Year</option>
-            </select>
-          </form>
-
-          <form>
-            <input type="radio" name="date" value="calendar" checked />
-            <label for="calendar">Календар</label>
-            <input type="radio" id="other" name="date" value="other" />
-            <label for="other">Інше</label>
-          </form>
-
-          <div>
-            <table>
-              <thead>
-                <tr>
-                  <th>25</th>
-                  <th>26</th>
-                  <th>27</th>
-                  <th>28</th>
-                  <th>29</th>
-                  <th>30</th>
-                  <th>31</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td><input type="text" placeholder="Plans..." /></td>
-                  <td><input type="text" placeholder="Plans..." /></td>
-                  <td><input type="text" placeholder="Plans..." /></td>
-                  <td><input type="text" placeholder="Plans..." /></td>
-                  <td><input type="text" placeholder="Plans..." /></td>
-                  <td><input type="text" placeholder="Plans..." /></td>
-                  <td><input type="text" placeholder="Plans..." /></td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
         </div>
       </section>
     </main>
