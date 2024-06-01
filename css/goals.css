@@ -60,3 +60,13 @@ button.addGoals {
   padding: 20px;
   border-radius: 10px;
 }
+
+@media (max-width: 750px) {
+  .title-goals-container {
+    padding: 10px 10px;
+  }
+
+  .goals-container {
+    margin-left: 20px;
+  }
+}

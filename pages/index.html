@@ -10,14 +10,24 @@
   <body>
     <header class="header">
       <div class="header__container container">
-        <a href="#"><img src="images/logo.jpg" alt="Логотип" class="logo" /></a>
+        <a href="index.html"
+          ><img src="images/logo.jpg" alt="Логотип" class="logo"
+        /></a>
 
         <div class="menu">
           <ul class="menu__list">
-            <li><a class="menu__link" href="#">Home</a></li>
-            <li><a class="menu__link" href="#">Goals</a></li>
-            <li><a class="menu__link" href="#">Exercise and plans</a></li>
-            <li><a class="menu__link" href="#">My personal trainer</a></li>
+            <li><a class="menu__link" href="index.html">Home</a></li>
+            <li><a class="menu__link" href="goals.html">Goals</a></li>
+            <li>
+              <a class="menu__link" href="exercise-plans.html"
+                >Exercise and plans</a
+              >
+            </li>
+            <li>
+              <a class="menu__link" href="my-personal-trainer.html"
+                >My personal trainer</a
+              >
+            </li>
           </ul>
         </div>
 
@@ -60,11 +70,26 @@
       <br />
 
       <section>
-        <div class="container">
-          <div class="workout-calendar-container">
-            <div class="dsadasd">
-              <button class="butn" role="button">+ New workout</button>
+        <div class="container_index container">
+          <div class="container__workout">
+            <button class="butn" role="button">+ New workout</button>
+            <div class="workouts">
+              <div class="photo-block">
+                <div>
+                  <a href=""><img src="images/biceps.jpg" alt="Photo 1" /></a>
+                  <a href=""><img src="images/chest.jpg" alt="Photo 2" /></a>
+                </div>
+                <div>
+                  <a href=""><img src="images/back.jpg" alt="Photo 3" /></a>
+                  <a href=""><img src="images/legs.jpg" alt="Photo 4" /></a>
+                </div>
+              </div>
+              <button class="butn butn1">More</button>
+            </div>
+          </div>
 
+          <div class="workout-calendar-container">
+            <div class="workout-controls">
               <form class="custom-form">
                 <select class="custom-select">
                   <option value="today">Today</option>
@@ -90,7 +115,7 @@
                 </button>
               </div>
 
-              <p>Березень 2024</p>
+              <p class="text">Березень 2024</p>
 
               <form class="custom-form">
                 <select class="custom-select">
@@ -99,66 +124,44 @@
                   <option value="year">Year</option>
                 </select>
               </form>
-
-              <form class="custom-radio-form">
-                <label class="custom-radio-label" for="calendar">
-                  <input
-                    type="radio"
-                    name="date"
-                    id="calendar"
-                    value="calendar"
-                    checked
-                  />
-                  <img
-                    src="images/calendar.png"
-                    alt="Calendar"
-                    class="radio-icon"
-                  />
-                </label>
-                <label class="custom-radio-label" for="other">
-                  <input type="radio" id="other" name="date" value="other" />
-                  <img src="images/other.png" alt="Dots" class="radio-icon" />
-                </label>
-              </form>
-
-              <!-- <div class="workouts">
-              <div>
-                <div class="photo-block">
-                  <a href=""><img src="images/biceps.jpg" alt="Photo 1" /></a>
-                  <a href=""><img src="images/chest.jpg" alt="Photo 2" /></a>
-                  <a href=""><img src="images/back.jpg" alt="Photo 3" /></a>
-                  <a href=""><img src="images/legs.jpg" alt="Photo 4" /></a>
-                </div>
-                <button class="butn butn1" role="button">More</button>
-              </div>
             </div>
+            <div class="line__workout-controls"></div>
+            <div class="calendar-container">
+              <div class="calendar">
+                <table>
+                  <thead>
+                    <tr>
+                      <th colspan="7">
+                        <button class="nav-button">&lt;</button>
 
-            <div>
-              <table>
-                <thead>
-                  <tr>
-                    <th>25</th>
-                    <th>26</th>
-                    <th>27</th>
-                    <th>28</th>
-                    <th>29</th>
-                    <th>30</th>
-                    <th>31</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><input type="text" placeholder="Plans..." /></td>
-                    <td><input type="text" placeholder="Plans..." /></td>
-                    <td><input type="text" placeholder="Plans..." /></td>
-                    <td><input type="text" placeholder="Plans..." /></td>
-                    <td><input type="text" placeholder="Plans..." /></td>
-                    <td><input type="text" placeholder="Plans..." /></td>
-                    <td><input type="text" placeholder="Plans..." /></td>
-                  </tr>
-                </tbody>
-              </table>
-            </div> -->
+                        1 2 3 4 5 6 7
+                        <button class="nav-button">&gt;</button>
+                      </th>
+                    </tr>
+                    <tr>
+                      <th>Пн</th>
+
+                      <th>Вт</th>
+                      <th>Ср</th>
+                      <th>Чт</th>
+                      <th>Пт</th>
+                      <th>Сб</th>
+                      <th>Нд</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><input type="text" placeholder="Плани..." /></td>
+                      <td><input type="text" placeholder="Плани..." /></td>
+                      <td><input type="text" placeholder="Плани..." /></td>
+                      <td><input type="text" placeholder="Плани..." /></td>
+                      <td><input type="text" placeholder="Плани..." /></td>
+                      <td><input type="text" placeholder="Плани..." /></td>
+                      <td><input type="text" placeholder="Плани..." /></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
           </div>
         </div>
@@ -207,7 +210,9 @@
             </ul>
           </div>
         </div>
-        <a href="#"><img src="images/logo.jpg" alt="Логотип" class="logo" /></a>
+        <a href="index.html"
+          ><img src="images/logo.jpg" alt="Логотип" class="logo"
+        /></a>
       </div>
     </footer>
   </body>

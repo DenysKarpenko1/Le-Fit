@@ -17,7 +17,7 @@
 }
 
 .trainer-photo {
-  width: 300px;
+  width: auto;
   height: 300px;
 }
 
@@ -79,4 +79,34 @@ button.button_button-container {
   padding: 50px 0;
   margin-left: 300px;
   text-wrap: nowrap;
+}
+
+@media (max-width: 1450px) {
+  .button-container {
+    margin-left: auto;
+    padding-left: 15px;
+  }
+  .button_button-container {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 850px) {
+  .button_button-container {
+    width: auto;
+  }
+
+  .trainer-biography > p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 540px) {
+  .trainer-info {
+    flex-direction: column;
+  }
+
+  .trainer-photo {
+    height: auto;
+  }
 }

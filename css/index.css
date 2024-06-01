@@ -1,3 +1,16 @@
+.container_index {
+  display: flex;
+}
+
+.workout-calendar-container {
+  max-width: 1100px;
+}
+
+.container__workout {
+  display: flex;
+  flex-direction: column;
+}
+
 .mainImage {
   display: flex;
   justify-content: center;
@@ -7,22 +20,26 @@
   border-radius: 20px;
 }
 
-.dsadasd {
+.workout-controls {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-left: 150px;
+  padding-bottom: 20px;
 }
 
-/* .workout-calendar-container {
-  display: flex;
+.line__workout-controls {
+  height: 1.5px;
+  background: rgb(202, 194, 194);
+  max-width: 950px;
+  margin-left: auto;
 }
-
-.menu__link {
-  font-family: sans-serif;
-} */
 
 .butn1 {
   width: 100%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .workouts {
@@ -84,66 +101,117 @@
   width: 40px;
 }
 
-/* Стилізація радіокнопок !!!!! */
-.custom-radio-form {
+.radio-icon {
+  display: block;
+  width: 40px;
+  height: 40px;
+}
+
+.calendar-container {
+  padding-top: 10px;
   display: flex;
-  border: 1px solid #ccc; /* Додаємо рамку */
-  border-radius: 4px; /* Закруглюємо кути */
+  margin-left: 120px;
 }
 
-.custom-radio-label {
-  position: relative;
-  display: inline-block;
-  margin-right: 20px;
+.calendar {
+  font-family: Arial, sans-serif;
+  border-collapse: collapse;
+  margin: 20px auto;
 }
 
-.custom-radio-label input[type="radio"] {
-  opacity: 0; /* Приховуємо саму радіокнопку */
-  position: absolute;
-  top: 0;
-  left: 0;
+.calendar table {
   width: 100%;
-  height: 100%;
+}
+
+.calendar th,
+.calendar td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.calendar th {
+  background-image: linear-gradient(to bottom, #fff5ee, #f8eedb);
+  font-weight: bold;
+  color: #333;
+}
+
+.calendar input[type="text"] {
+  width: calc(100% - 32px);
+  height: 100px;
+  box-sizing: border-box;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  word-wrap: break-word;
+}
+
+.calendar td:hover {
+  background-color: #f9f9f9;
+}
+
+.calendar button {
+  padding: 8px 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
   cursor: pointer;
 }
 
-/* Стилізація радіокнопок - вибрана */
-.custom-radio-label input[type="radio"]:checked + img {
-  background-color: #ccc; /* Змінюємо колір фону при виборі */
+.calendar th[colspan="7"] {
+  letter-spacing: 20px;
 }
 
-/* Стилізація радіокнопки - зображення */
-.radio-icon {
-  display: block;
-  width: 40px; /* Задаємо розмір зображення */
-  height: 40px; /* Задаємо розмір зображення */
+.text {
+  font-size: 25px;
 }
 
-/* Стилізація лінії, що розділяє картинки */
-.custom-radio-label::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 1px;
-  height: 80%;
-  background-color: #ccc;
-}
-
-/* @media (max-width: 1400px) {
-  
-  .full-content {
-    align-items: center; 
-    flex-direction: column;
-  }
-
-  .workouts,
-  .calendar {
-    margin-right: 0;
-  }
-
+@media (max-width: 1550px) {
   .workouts {
-    margin-bottom: 20px;
+    text-align: center;
   }
-} */
+}
+
+@media (max-width: 1170px) {
+  .calendar-container {
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 1250px) {
+  .workout-controls {
+    padding-left: 100px;
+  }
+}
+
+@media (max-width: 810px) {
+  .container_index {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container__workout {
+    margin: 50px;
+  }
+
+  .container__workout {
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 570px) {
+  .mainImage {
+    display: none;
+  }
+
+  .workout-controls {
+    padding-left: 10px;
+  }
+
+  .calendar-container {
+    margin-left: 0;
+  }
+}
